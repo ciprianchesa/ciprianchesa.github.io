@@ -2,22 +2,6 @@ body {
     background-color: #f3f2ef;
 }
 
-/* header, footer {
-    padding: 4px;
-    margin: 2px;
-    border: 1px solid blue;
-}
-
-#content div, #side-menu section {
-    padding: 4px;
-    margin: 2px;
-    border: 1px solid red;
-}
-
-#side-menu section {
-    border: 1px solid green;
-} */
-
 html {
     height: 100%;
 }

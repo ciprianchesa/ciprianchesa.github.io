@@ -1,0 +1,113 @@
+body {
+    background-color: #f3f2ef;
+}
+
+/* header, footer {
+    padding: 4px;
+    margin: 2px;
+    border: 1px solid blue;
+}
+
+#content div, #side-menu section {
+    padding: 4px;
+    margin: 2px;
+    border: 1px solid red;
+}
+
+#side-menu section {
+    border: 1px solid green;
+} */
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 1;
+}
+
+#top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+#picture {
+    margin: 0 10px;
+}
+
+#content {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+}
+
+#side-menu {
+    flex: 1;
+}
+
+#main {
+    flex: 3;
+}
+
+#motto {
+    text-align: right;
+    color: red;
+}
+
+.page {
+    background-color: #fff;
+    margin: 16px 0;
+    padding: 24px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    transition: box-shadow 83ms;
+    border-radius: 4px;
+}
+
+.page h2 {
+    margin: 0;
+}
+
+.favorite-skill {
+    background-color: rgb(175, 175, 191);
+    font-weight: bold;
+    color: blue;
+    width: 75;
+    margin: 5px 0;
+    padding: 2px 5px;
+}
+
+td {
+    padding: 3px;
+}
+
+#top-menu-bar {
+    text-align: center;
+    background-color: #334455;
+    color: #fff;
+}
+
+#top-menu-bar li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#top-menu-bar a {
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+    color: #fff;
+}
+
+#top-menu-bar a:hover {
+    color: #334455;
+    background-color: #fff;
+}

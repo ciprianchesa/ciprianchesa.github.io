@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>Cipri's CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="top-header">
+            <div id="picture">
+                <img src="me.jpg" alt="Selfie" height="100">
+            </div>
+            <div id="myName">
+                <h1>Ciprian Chesa</h1>
+                <h2>Web Developer</h2>
+            </div>
+        </div>
+        
+        <p id="motto">Despre mine: Learning to code!</p>
+
+        <ul id="top-menu-bar">
+            <li><a href="#" onclick="showHomePage();">Home</a></li>
+            <li><a href="#" onclick="showSkillsPage();">Skills</a></li>
+            <li><a href="#" onclick="showLanguagesPage();">Languages</a></li>
+            <li><a href="#" onclick="showProjectsPage();">Projects</a></li>
+        </ul>
+    </header>
+
+    <section id="content">
+        <div id="side-menu">
+            <section>
+                <form action="">
+                    <div>
+                        <label for="nume">Your Name</label>
+                        <input type="text" name="p1" id="nume" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="p2" id="email" required>
+                    </div>
+                    <button>Send Request</button>
+                </form>
+            </section>
+        
+            <section>Menu 2</section>
+        </div>
+
+        <div id="main">
+            <div id="home" class="page">
+                <h2>Home</h2>
+                <p>About me, as software developer...</p>
+            </div>
+
+            <div id="skills" class="page" style="display: none;">
+                <h2>Skills:</h2>
+                <ul>
+                    <li class="favorite-skill">HTML</li>
+                    <li>CSS</li>
+                    <li class="favorite-skill">JS</li>
+                </ul>
+            </div>
+
+            <div id="languages" class="page" style="display: none;">
+                <h2>Languages:</h2>
+                <table border="1">
+                    <tr>
+                        <th>Languages</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>Romanian</td>
+                        <td>Native</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="projects" class="page" style="display: none;">
+                <h2>Projects</h2>
+                <p>About my projects, coming soon...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/ciprian-chesa/" target="_blank">LinkedIn</a>
+        <a href="https://fasttrackit.org/" target="_blank">Fast Track IT</a>
+    </footer>
+
+<script>
+    //comentariu
+    var name = 'Ciprian'
+    console.log("Salut, bine ai venit " + name + `!`);
+    console.log(name + " te rog sa cumperi paine.")
+   
+    console.info(434334 + 54656556);
+
+    var m = document.getElementById("motto");
+    m.style.color = "blue";
+
+</script>
+
+<script src="functions.js"></script>
+
+</body>
+
+</html>

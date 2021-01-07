@@ -58,6 +58,18 @@ header {
     flex: 3;
 }
 
+footer {
+    text-align: center;
+    background-color: #334455;
+    padding: 10px;
+    color: #f3f2ef;
+}
+
+footer a {
+    color: #f3f2ef;
+    padding: 0 10px;
+}
+
 #motto {
     text-align: right;
     color: red;

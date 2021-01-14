@@ -109,6 +109,7 @@ td {
     text-align: center;
     background-color: #334455;
     color: #fff;
+    padding: 4px 15px 4px 15px;
 }
 
 #top-menu-bar li {
@@ -119,11 +120,13 @@ td {
 
 #top-menu-bar a {
     text-decoration: none;
-    padding: 0 15px 0 15px;
+    padding: 0px 15px 0px 15px;
     color: #fff;
+    display: inline-block;
 }
 
 #top-menu-bar a:hover {
     color: #334455;
     background-color: #fff;
+    padding: 0px 15px 0px 15px;
 }

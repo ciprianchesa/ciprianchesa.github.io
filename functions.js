@@ -1,47 +1,41 @@
-function showHomePage() {
-    var skills = document.getElementById('skills');
-    skills.style.display = 'none';
-    var languages = document.getElementById('languages');
-    languages.style.display = 'none';
-    var projects = document.getElementById('projects');
-    projects.style.display = 'none';
+function hide(id) {
+    var el = document.getElementById(id);
+    el.style.display = 'none';
+}
 
-    var page = document.getElementById('home');
-    page.style.display = '';
+function show(id) {
+    var el = document.getElementById(id);
+    el.style.display = '';
+}
+
+function showHomePage() {
+    hide("skills");
+    hide("languages");
+    hide("projects");
+
+    show('home');
 }
 
 function showSkillsPage() {
-    var home = document.getElementById('home');
-    home.style.display = 'none';
-    var languages = document.getElementById('languages');
-    languages.style.display = 'none';
-    var projects = document.getElementById('projects');
-    projects.style.display = 'none';
+    hide('home');
+    hide('languages');
+    hide('projects');
     
-    var page = document.getElementById('skills'); 
-    page.style.display = '';
+    show('skills'); 
 }
 
 function showLanguagesPage() {
-    var home = document.getElementById('home');
-    home.style.display = 'none';
-    var skills = document.getElementById('skills');
-    skills.style.display = 'none';
-    var projects = document.getElementById('projects');
-    projects.style.display = 'none';
+    hide('home');
+    hide('skills');
+    hide('projects');
 
-    var page = document.getElementById('languages');
-    page.style.display = '';
+    show('languages');
 }
 
 function showProjectsPage() {
-    var home = document.getElementById('home');
-    home.style.display = 'none';
-    var skills = document.getElementById('skills');
-    skills.style.display = 'none';
-    var languages = document.getElementById('languages');
-    languages.style.display = 'none';
+    hide('home');
+    hide('skills');
+    hide('languages');
 
-    var page = document.getElementById('projects');
-    page.style.display = '';
+    show('projects');
 }

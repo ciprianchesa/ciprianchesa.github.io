@@ -1,41 +1,34 @@
 function hide(id) {
-    var el = document.getElementById(id);
-    el.style.display = 'none';
+    document.getElementById(id).style.display = 'none';
 }
 
 function show(id) {
-    var el = document.getElementById(id);
-    el.style.display = '';
+    document.getElementById(id).style.display = '';
 }
 
-function showHomePage() {
+function hideAllPages() {
+    hide('home');
     hide("skills");
     hide("languages");
     hide("projects");
+}
 
+function showHomePage() {
+    hideAllPages();
     show('home');
 }
 
 function showSkillsPage() {
-    hide('home');
-    hide('languages');
-    hide('projects');
-    
+    hideAllPages();
     show('skills'); 
 }
 
 function showLanguagesPage() {
-    hide('home');
-    hide('skills');
-    hide('projects');
-
+    hideAllPages();
     show('languages');
 }
 
 function showProjectsPage() {
-    hide('home');
-    hide('skills');
-    hide('languages');
-
+    hideAllPages();
     show('projects');
 }

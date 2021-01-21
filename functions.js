@@ -7,13 +7,15 @@ function show(id) {
 }
 
 function hideAllPages() {
-    var pagesIds = ["home", "skills", "languages", "projects"];
-    console.debug(pagesIds);
+
+    var pages = document.querySelectorAll(".page");
 
     //initial ; condition   ; post execution
-    for(var i = 0; i < pagesIds.length; i++) {
-        console.info('i = ', i);
-        hide(pagesIds[i]);
+    for(var i = 0; i < pages.length; i++) {
+        var page = pages[i];
+        hide(page.id);
+        // hide(pages[i].id);
+       // hide(pagesIds[i]);
     }
 }
 

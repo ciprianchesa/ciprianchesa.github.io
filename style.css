@@ -25,7 +25,9 @@ header {
 }
 
 #picture {
-    margin: 10px;
+    padding: 5px;
+    width: 108px;
+    height: 108px;
 }
 
 #picture img {

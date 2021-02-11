@@ -42,7 +42,7 @@ var allSkills = [
 
 var allSkillsHtml = allSkills.map(function(skill) {
     console.info(skill);
-    return `<li>` + skill + `</li>`
+    return `<li>${skill}</li>`
 });
 
 var skillsEl = document.querySelector("#skills ul");

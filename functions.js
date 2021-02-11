@@ -32,15 +32,10 @@ listenMenuClicks();
 
 showPage("skills");
 
-var allSkills = [
-    { name: "HTML", favorite: true, endorsements: 5 }, 
-    { name: "CSS", favorite: false, endorsements: 5 }, 
-    { name: "JS", favorite: true, endorsements: 7 }
-];
+var allSkills = [];
 
 function showSkills(skills) {
     var allSkillsHtml = skills.map(function(skill) {
-        //TODO class = "favorite-skill"
         return `<li>${skill.name} <span>(${skill.endorsements})</span></li>`
     });
     
@@ -48,4 +43,13 @@ function showSkills(skills) {
     skillsEl.innerHTML = allSkillsHtml.join("");
 }
 
-showSkills(allSkills);
+fetch("skills.json")
+    .then(function(r) {
+        return r.json();
+    })
+    .then(function(r) {
+        console.warn("done", r);
+        showSkills(skills);
+    });
+
+// showSkills(allSkills);

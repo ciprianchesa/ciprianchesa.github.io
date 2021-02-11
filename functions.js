@@ -22,7 +22,7 @@ function listenMenuClicks() {
     document.addEventListener("click", function(e){
     var link = e.target;
     if (link.matches("#top-menu-bar a")) {
-        var id = link.innerHTML.toLowerCase();
+        var id = link.getAttribute("data-id");
         showPage(id);
         }
     });

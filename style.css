@@ -95,9 +95,8 @@ footer a {
 }
 
 .favorite-skill {
-    background-color: rgb(175, 175, 191);
     font-weight: bold;
-    color: blue;
+    color: royalblue;
     width: 75;
     margin: 5px 0;
     padding: 2px 5px;

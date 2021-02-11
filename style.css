@@ -103,6 +103,10 @@ footer a {
     padding: 2px 5px;
 }
 
+#skills li span {
+    color: #777777
+}
+
 td {
     padding: 3px;
 }

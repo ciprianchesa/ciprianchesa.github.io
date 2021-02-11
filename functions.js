@@ -35,7 +35,7 @@ showPage("skills");
 var allSkills = [];
 
 function showSkills(skills) {
-    var allSkillsHtml = skills.map(function(skill) {
+    var allSkillsHtml = skills.map(function(skill){
         return `<li>${skill.name} <span>(${skill.endorsements})</span></li>`
     });
     
@@ -47,8 +47,7 @@ fetch("skills.json")
     .then(function(r) {
         return r.json();
     })
-    .then(function(r) {
-        console.warn("done", r);
+    .then(function(skills) {
         showSkills(skills);
     });
 

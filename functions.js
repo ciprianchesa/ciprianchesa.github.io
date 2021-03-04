@@ -9,7 +9,7 @@ function show(id) {
 
 function hideAllPages() {
     const pages = Array.from(document.querySelectorAll(".page"));
-    pages.forEach(function(page) {
+    pages.forEach((page) => {
         hide(page.id);
     });
 }
@@ -20,7 +20,7 @@ function showPage(pageId) {
 }
 
 function listenMenuClicks() {
-    document.addEventListener("click", function(e){
+    document.addEventListener("click", (e) => {
     const link = e.target;
     if (link.matches("#top-menu-bar a")) {  
         const id = link.getAttribute("data-id");
@@ -36,7 +36,7 @@ showPage("skills");
 let allSkills = [];
 
 function showSkills(skills) {
-    const allSkillsHtml = skills.map(function(skill){
+    const allSkillsHtml = skills.map((skill) => {
         const cls = skill.favorite ? "favorite-skill" : "";
         return `<li class="${cls}">
             ${skill.name} <span>(${skill.endorsements})</span>
@@ -48,11 +48,11 @@ function showSkills(skills) {
 }
 
 fetch("skills.json")
-    .then(function(r) {
+    .then((r) => {
         return r.json();
     })
-    .then(function(skills) {
-        skills.sort(function(s1, s2) {
+    .then((skills) => {
+        skills.sort((s1, s2) => {
             return s2.endorsements - s1.endorsements;
         })
         showSkills(skills);

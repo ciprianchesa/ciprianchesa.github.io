@@ -1,4 +1,4 @@
-var employees = [
+const employees = [
     {
       id: 1,
       firstName: "Solly",
@@ -91,4 +91,72 @@ function collectFirstName(employees) {
     });
 
 }
-collectFirstName(employees);
+//collectFirstName(employees);
+
+function getAverage(employees) {
+  var sum = 0;
+  employees.forEach(employee => {
+   // console.info(employee.salary);
+    sum = sum + 1 * employee.salary;
+  });
+
+  console.info(sum);
+  return sum / employees.length;
+}
+
+// var average = getAverage(employees);
+// console.info(average);
+
+
+function simpleAdding(n) {
+  var sum = 0;
+  for(var i = 1; i <= n; i++) {
+   // sum = sum + i;
+   sum += i;
+  }
+  return sum;
+}
+
+function add(n) {
+  if (n < 1) return 0;
+    return n + add(n-1);
+}
+// console.info(simpleAdding(4));
+// console.info(add(6));
+
+
+function calculateAverageSalary(employees) {
+  var sum = 0;
+  employees.forEach(employee => {
+    console.info(employee.salary);
+    sum = sum + 1 * employee.salary;
+  });
+  return 1;
+}
+// var average = calculateAverageSalary(employees);
+// console.log("average", average); 
+
+
+function calculateAverageFemSalary(employees) {
+  let sum = 0;
+  var females = 0;
+  employees.forEach(employee => {
+    if (employee.gender == "Female") {
+      sum = sum + employee.salary * 1;
+      females++;
+    }
+  })
+  return sum / females;
+} 
+
+const femAverage = calculateAverageFemSalary(employees);
+console.info("female salary average", femAverage); 
+
+
+function calculateAverageFemSalary2(employees) {
+  const females = employees.filter(employee => employee.gender == "Female");
+  return getAverage(females);
+}
+
+const femAverage2 = calculateAverageFemSalary2(employees);
+console.info("female salary average2", femAverage2); 

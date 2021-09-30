@@ -53,5 +53,3 @@ fetch("skills.json")
         })
         showSkills(skills);
     });
-
-// showSkills(allSkills);
